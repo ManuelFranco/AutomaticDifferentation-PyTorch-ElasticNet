@@ -1,6 +1,6 @@
 # Pytorch-ElasticNet
 
-This project aims to be a reimplementation of the Elastic Net algorithm using the automatic differentiation provided by the PyTorch library. The code implements linear regression, binary regression, and multivariable regression, with one binary output and the other continuous.
+This project aims to be a reimplementation of the Elastic Net algorithm using the automatic differentiation provided by the PyTorch library. The code implements linear regression, binary regression, and multivariable regression with one binary output and the other continuous.
 
 
 # Prerequisites
@@ -20,7 +20,7 @@ This function performs cross-validation using GLMNET algorithm. It takes the fol
 
 + x: Input features (torch tensor)
 + y: Target values (torch tensor)
-+ alpha: Mixing parameter between L1 and L2 regularization (float)
++ alpha: Mixing parameter between Lp and Lq regularization (float)
 + umbral_error: Threshold for convergence criterion (float, default: 1e-100)
 + max_iteraciones: Maximum number of iterations (int, default: 25)
 + learning_rate: Learning rate for gradient descent (float, default: 0.01)
@@ -55,3 +55,14 @@ The function returns an object with the following attributes:
 
 
 You can use the f_opt or f_1se functions to make predictions on new data using the trained model.
+For using classic Lasso regression you should use alpha = 1, p = 1
+For using classic Lasso regression you should use alpha = 0, q = 2
+For using classic ElasticNet regression you should use p = 1, q = 2 (alpha is recommended to be between 0.8 and 0.999)
+
+# cv_GLMNET_Multiple
+
+
+
+
+
+
