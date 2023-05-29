@@ -1,6 +1,6 @@
-# Pytorch-ElasticNet
+# AutomaticDifferentiation-ElasticNet
 
-This project aims to be a reimplementation of the Elastic Net algorithm using the automatic differentiation provided by the PyTorch library. The code implements linear regression, binary regression, and multivariable regression with one binary output and the other continuous.
+This project aims to be a reimplementation of the Elastic Net algorithm using the automatic differentiation engine provided by the PyTorch library. The code implements linear regression, binary regression, and multivariable regression with one binary output and the other continuous.
 
 
 # Prerequisites
